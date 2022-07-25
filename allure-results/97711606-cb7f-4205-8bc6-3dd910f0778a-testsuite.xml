@@ -1,0 +1,92 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658677322515' stop='1658677329031'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1658677322516' status='broken' stop='1658677329026'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658677322517' status='passed' stop='1658677328694'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='89bbdf48-0ec4-4158-8be5-ff2d9f190cf3-attachment.json' type='application/json' size='62'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658677328696' status='passed' stop='1658677328712'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='be6ac83b-9dee-4383-b9ec-3a6812c46788-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='3554b324-6d5a-48f0-81e5-7a581d1b47c3-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658677328720' status='passed' stop='1658677328750'>
+                    <name>POST /session/:sessionId/element/2944138c-46d5-4462-9c36-ccd3945de7fb/clear</name>
+                    <title>POST /session/:sessionId/element/2944138c-46d5-4462-9c36-ccd3945de7fb/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1658677328753' status='passed' stop='1658677328800'>
+                    <name>POST /session/:sessionId/element/2944138c-46d5-4462-9c36-ccd3945de7fb/value</name>
+                    <title>POST /session/:sessionId/element/2944138c-46d5-4462-9c36-ccd3945de7fb/value</title>
+                    <attachments>
+                        <attachment title='Request' source='fcddd744-1e49-45ef-8657-350389f0d75f-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658677328801' status='passed' stop='1658677328814'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='93b5ddf5-b4ef-4c29-b1fd-f745806f06eb-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='e5d9ab74-a75f-4cfa-99a5-e78b444e1c1f-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658677328817' status='broken' stop='1658677329026'>
+                    <name>POST /session/:sessionId/element/dfc18c39-1c69-45a6-adc0-1224bab9fdce/clear</name>
+                    <title>POST /session/:sessionId/element/dfc18c39-1c69-45a6-adc0-1224bab9fdce/clear</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1658677328921' status='passed' stop='1658677329025'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='8aba4579-be83-40af-9431-b611a5250aea-attachment.png' type='image/png' size='47539'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable
+                  (Session info: chrome=103.0.5060.114)</message>
+                <stack-trace>element not interactable: element not interactable
+                  (Session info: chrome=103.0.5060.114)
+                    at getErrorFromResponseBody (D:\webdriver-io-abuzar\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (D:\webdriver-io-abuzar\node_modules\webdriver\build\request\index.js:166:60)
+                    at async Element.wrapCommandFn (D:\webdriver-io-abuzar\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (D:\webdriver-io-abuzar\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (D:\webdriver-io-abuzar\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (D:\webdriver-io-abuzar\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (D:\webdriver-io-abuzar\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (D:\webdriver-io-abuzar\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (D:\webdriver-io-abuzar\node_modules\@wdio\utils\build\shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

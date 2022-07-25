@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658679379071' stop='1658679394343'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1658679379071' status='broken' stop='1658679394342'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps>
+                <step start='1658679379074' status='passed' stop='1658679384061'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='d5c69a4f-ed2f-4eb8-a8c8-fe99fde38ab7-attachment.json' type='application/json' size='62'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658679384063' status='passed' stop='1658679384083'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f11b91ed-f5f3-4889-bf7d-81b1c77f064c-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='df08b4e1-0a70-4df7-8598-ac1d4cd8be4a-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658679384092' status='passed' stop='1658679384119'>
+                    <name>POST /session/:sessionId/element/668312e1-d5c0-43a9-8e3a-715198734860/clear</name>
+                    <title>POST /session/:sessionId/element/668312e1-d5c0-43a9-8e3a-715198734860/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1658679384122' status='passed' stop='1658679384165'>
+                    <name>POST /session/:sessionId/element/668312e1-d5c0-43a9-8e3a-715198734860/value</name>
+                    <title>POST /session/:sessionId/element/668312e1-d5c0-43a9-8e3a-715198734860/value</title>
+                    <attachments>
+                        <attachment title='Request' source='53ef7fda-3d9e-4ae1-b522-b1b0b96ec018-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658679384166' status='passed' stop='1658679384181'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0f41c476-7cf6-4f9c-b748-0d32b81e1a3a-attachment.json' type='application/json' size='68'/>
+                        <attachment title='Response' source='9b1aeb88-1cc4-442e-915c-d46975479d3c-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658679384184' status='passed' stop='1658679384238'>
+                    <name>POST /session/:sessionId/element/2aabc017-c888-4f48-8f61-4d6ad78cbed1/click</name>
+                    <title>POST /session/:sessionId/element/2aabc017-c888-4f48-8f61-4d6ad78cbed1/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1658679384238' status='passed' stop='1658679384252'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2844f148-da6f-42ea-ab66-d67a1c5c05c0-attachment.json' type='application/json' size='61'/>
+                        <attachment title='Response' source='6b5e79e7-86c7-409c-a521-725cda4148b5-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1658679394268' status='passed' stop='1658679394341'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='54e61446-7ffa-4aac-a4aa-2b408cdfc503-attachment.png' type='image/png' size='49044'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>waitUntil condition failed with the following reason: Cannot read property 'toString' of undefined</message>
+                <stack-trace>Error: waitUntil condition failed with the following reason: Cannot read property 'toString' of undefined
+                    at D:\webdriver-io-abuzar\node_modules\webdriverio\build\commands\browser\waitUntil.js:70:15
+                    at async Browser.wrapCommandFn (D:\webdriver-io-abuzar\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async LoginPage.login (D:\webdriver-io-abuzar\test\pageobjects\login.page.ts:35:9)
+                    at async Context.&lt;anonymous> (D:\webdriver-io-abuzar\test\specs\example.e2e.ts:7:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
