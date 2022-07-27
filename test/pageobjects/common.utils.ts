@@ -25,7 +25,7 @@ class CommonUtils {
 
     public async selectModule (moduleName: string){
         await $("//span[contains(text(),'"+moduleName+"')]").click();
-        await this.tenantName.waitForDisplayed({timeout: 10000});
+        //await this.tenantName.waitForDisplayed({timeout: 10000});
     }
 }
 
