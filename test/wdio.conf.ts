@@ -132,7 +132,7 @@ export const config: Options.Testrunner = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     //baseUrl: 'https://e2e.platform.devacaalpha.com/',
-    baseUrl: URL[process.env.URL],
+    baseUrl: URL[process.env.ENV],
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
