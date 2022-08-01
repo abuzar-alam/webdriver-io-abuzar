@@ -1,3 +1,4 @@
+const excelToJson = require('convert-excel-to-json');
 class CommonUtils {
     /*
     *Contains common locators and methods which will be needed by everyone
@@ -26,6 +27,16 @@ class CommonUtils {
     public async selectModule (moduleName: string){
         await $("//span[contains(text(),'"+moduleName+"')]").click();
         //await this.tenantName.waitForDisplayed({timeout: 10000});
+    }
+
+    public getLoginData(){
+
+        var loginData = excelToJson({
+            sourceFile: 'test-data/login-data.xlsx',
+            sheets: ['QA']
+        });
+
+        return loginData;
     }
 }
 
