@@ -1,4 +1,4 @@
-const excelToJson = require('convert-excel-to-json');
+import * as excelToJson from 'convert-excel-to-json';
 class CommonUtils {
     /*
     *Contains common locators and methods which will be needed by everyone
