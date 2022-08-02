@@ -10,7 +10,7 @@ describe('Login to Alpha and Select Tenant', () => {
 
     it('I should be able to login to Alpha', async () => {
         await LoginPage.open();
-        await LoginPage.login(USER.AML_USER, PSWD.DEFAULT_PSWD );
+        //await LoginPage.login(USER.AML_USER, PSWD.DEFAULT_PSWD );
         await LoginPage.login(userID, password);
     });
     
